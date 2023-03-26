@@ -5,7 +5,7 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 }
-@media screen and (max-width:425px){
+@media screen and (max-width:720px){
     .main{
         width: 100%;
         height: 100vh;
@@ -53,17 +53,61 @@
         background-color: #444c55;
     }
     .why--title{
+        display: grid;
+        align-items: center;
         width: 100%;
         height: 20%;
         border: 1px solid tomato;
     }
     .why--title h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         color: azure;
         text-align: center;
     }
     .why--content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         width: 100%;
         height: 80%;
         border: 1px solid tomato;
+        gap: 1rem;
+    }
+    .image--content{
+        position: relative;
+        width: 80%;
+        aspect-ratio: 4/5;
+        z-index: 0;
+        border-radius: 20px;
+    }
+    .image--set{
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+    .nav{
+        width: 80%;
+        aspect-ratio: 8/2;
+        background-color: #1d262f;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-btn{
+        color: aliceblue;
+        font-size: 10vw;
+        text-decoration: none;
+        transition: 1s ease-in-out;
+    }
+    .nav-btn:hover{
+        color: #2ae3b7;
     }
 }
