@@ -100,12 +100,20 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 1rem;
     }
     .nav-btn{
+        width: 2rem;
+        aspect-ratio: 1/1;
         color: aliceblue;
         font-size: 10vw;
         text-decoration: none;
         transition: 1s ease-in-out;
+        background-color: #1d262f;
+        border: none;
+    }
+    .nav-btn-pause{
+        background-color: #2ae3b7;
     }
     .nav-btn:hover{
         color: #2ae3b7;
