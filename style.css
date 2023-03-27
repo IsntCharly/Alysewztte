@@ -137,6 +137,7 @@ html{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        gap: 1em;
     }
     .about-icon-card{
         width: 80%;
@@ -147,15 +148,19 @@ html{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: .9rem;
+        gap: 1rem;
     }
     .about-title{
+        font-size: 5vw;
         width: 80%;
         text-align: center;
     }
     .paragraph-container{
         width: 80%;
         text-align: justify;
+    }
+    .paragraph-container p{
+        font-size: 3vw;
     }
     .icon{
         width: 20%;
