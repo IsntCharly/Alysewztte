@@ -6,6 +6,7 @@ const text = document.querySelector('#input');
 const surprise = document.querySelector('.surprise');
 const _switch = document.querySelector('#switch');
 const _surprise_title = document.querySelector('.surprise_title');
+const heart = document.querySelector('#heart');
 btn.addEventListener('click', ()=>{
     audio.play();
     
@@ -25,8 +26,10 @@ _switch.addEventListener('click', ()=>{
     if(_switch.checked == true){
         _surprise_title.innerHTML = "Yeii gracias por ser mi novia :D";
         _surprise_title.style.color = "#2ae3b7";
+        heart.innerHTML = '<i class="fa-solid fa-heart"></i>';
     }else{
         _surprise_title.innerHTML = "Tiste :(";
         _surprise_title.style.color = "tomato";
+        heart.innerHTML = '<i class="fa-solid fa-heart-crack"></i>';
     }
 });
